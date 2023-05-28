@@ -28,4 +28,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto realizado no Stage 05, na plataforma da Rocketseat para consolidar conhecimentos adquiridos sobre JavaScript no HTML e DOM. Desafio de construir um temporizador apresentado no Stage 05 do Explore.
 
-- [Visite o projeto online](#)
+- [Visite o projeto online](https://rafaeldsal.github.io/focus-timer-desafio/)
