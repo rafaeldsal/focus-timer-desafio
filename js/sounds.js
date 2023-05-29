@@ -12,8 +12,25 @@ export default function () {
   buttonPressAudioCoffeeShop.loop = true;
   buttonPressAudioFirePlace.loop = true;
 
+  function controlVolumeForest(value) {
+    buttonPressAudioForest.volume = value;
+  }
+
+  function controlVolumeRain(value) {
+    buttonPressAudioRain.volume = value;
+  }
+
+  function controlVolumeCoffeeShop(value) {
+    buttonPressAudioCoffeeShop.volume = value;
+  }
+
+  function controlVolumeFirePlace(value) {
+    buttonPressAudioFirePlace.volume = value;
+  }
+
   function buttonPressForest() {
     buttonPressAudioForest.play();
+    buttonPressAudioForest.volume = 0.5;
     buttonPressAudioRain.pause();
     buttonPressAudioCoffeeShop.pause();
     buttonPressAudioFirePlace.pause();
@@ -21,6 +38,7 @@ export default function () {
 
   function buttonPressRain() {
     buttonPressAudioRain.play();
+    buttonPressAudioRain.volume = 0.5;
     buttonPressAudioForest.pause();
     buttonPressAudioCoffeeShop.pause();
     buttonPressAudioFirePlace.pause();
@@ -28,6 +46,7 @@ export default function () {
 
   function buttonPressCoffeeShop() {
     buttonPressAudioCoffeeShop.play();
+    buttonPressAudioCoffeeShop.volume = 0.5;
     buttonPressAudioForest.pause();
     buttonPressAudioRain.pause();
     buttonPressAudioFirePlace.pause();
@@ -35,6 +54,7 @@ export default function () {
 
   function buttonPressFirePlace() {
     buttonPressAudioFirePlace.play();
+    buttonPressAudioFirePlace.volume = 0.5;
     buttonPressAudioForest.pause();
     buttonPressAudioRain.pause();
     buttonPressAudioCoffeeShop.pause();
@@ -53,5 +73,9 @@ export default function () {
     buttonPressCoffeeShop,
     buttonPressFirePlace,
     pauseAllSounds,
+    controlVolumeCoffeeShop,
+    controlVolumeFirePlace,
+    controlVolumeRain,
+    controlVolumeForest
   };
 }

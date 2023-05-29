@@ -12,7 +12,11 @@ Este projeto é promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
 <br>
 
 <p align="center">
-  <img alt="Desafio temporizador apresentado no Stage 05 do Explore" src=".github/focus.png" width="100%">
+  <img alt="Desafio temporizador apresentado no Stage 05 do Explore" src=".github/focus-light.png" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Desafio temporizador apresentado no Stage 05 do Explore" src=".github/focus-dark.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,6 +30,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto realizado no Stage 05, na plataforma da Rocketseat para consolidar conhecimentos adquiridos sobre JavaScript no HTML e DOM. Desafio de construir um temporizador apresentado no Stage 05 do Explore.
+Projeto realizado no Stage 05, na plataforma da Rocketseat para consolidar conhecimentos adquiridos sobre JavaScript no HTML e DOM. Desafio de construir um temporizador apresentado no Stage 05 do Explore. Na segunda etapa do desafio foi proposto a realização do dark mode e a adição do controladores de volume para cada card.
 
 - [Visite o projeto online](https://rafaeldsal.github.io/focus-timer-desafio/)

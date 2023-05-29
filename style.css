@@ -7,11 +7,23 @@
 :root {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+
+  --color: #323238;
+
+  --bg: white;
+  --color-timer: var(--color);
+  --color-controls: var(--color);
+  --color-volume: var(--color);
+  
+  --color-card:  #E1E1E6;
+  --color-icon: var(--color);
+  --color-emphasis: #02799d;
 }
 
 body {
   display: grid;
   min-height: 100vh;
+  background-color: var(--bg);
 }
 
 main {
@@ -32,20 +44,24 @@ main {
   display: flex;
   flex-direction: column;
   width: 32.1rem;
-  align-items: center
+  align-items: center;
 }
 
 #time button {
   font-size: 10rem;
   line-height: 14.8rem;
   text-align: center;
-  color: #323238;
+  color: var(--color-timer);
   display: flex;
 }
 
 #controls {
   display: flex;
   gap: 2rem;
+}
+
+#controls button svg path {
+  fill: var(--color-controls);
 }
 
 #controls button svg:hover {
@@ -59,6 +75,52 @@ button {
   cursor: pointer;
 }
 
+.card {
+  position: relative;
+}
+
+input {
+  position: absolute;
+  bottom: 2rem;
+    left: 2.6rem;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+    width: 9rem;
+    height: 0.4rem;
+    background: var(--color-volume);
+    border-radius: 0.5rem;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+
+  background-color: var(--color-volume);
+}
+
+input::-moz-range-thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%; 
+
+  background: #FFF;
+  cursor: pointer;
+}
+
+.emphasis-volume[type=range] {
+  background: white;
+}
+
+.emphasis-volume::-webkit-slider-thumb {
+  background-color: white;
+}
+
+
 #cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -67,13 +129,56 @@ button {
 }
 
 #cards button svg:hover {
-  padding: .1rem;
+  padding: 0.1rem;
 }
 
+.fireplace svg path:nth-child(1) {
+  fill: var(--color-card);
+}
+
+.fireplace svg path:nth-child(2) {
+  fill: var(--color-icon)
+}
+
+.forest svg path:nth-child(1) {
+  fill: var(--color-card);
+}
+
+.forest svg path:nth-child(2) {
+  fill: var(--color-icon)
+}
+
+.coffee-shop svg path:nth-child(1) {
+  fill: var(--color-card);
+}
+
+.coffee-shop svg path:nth-child(2) {
+  fill: var(--color-icon)
+}
+
+.rain svg path:nth-child(1) {
+  fill: var(--color-card);
+}
+
+.rain svg path:nth-child(2) {
+  fill: var(--color-icon)
+}
+
+
 .emphasis svg path:nth-child(1) {
-  fill: #02799D;  
+  fill: var(--color-emphasis);
 }
 
 .emphasis svg path:nth-child(2) {
   fill: white;
+}
+
+.dark-mode {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+.hide {
+  display: none;
 }

@@ -5,13 +5,9 @@ import { elements } from "./elements.js";
 import Events from "./events.js";
 
 const {
-  buttonPlay,
-  buttonStop,
-  buttonSet,
   minutesDisplay,
   secondsDisplay,
-  buttonUpMinutes,
-  buttonDownMinutes,
+  
 } = elements;
 
 const timer = Timer({
